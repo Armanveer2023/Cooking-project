@@ -3,16 +3,15 @@ import { useState, useEffect } from "react";
 
 const BASEE_URL = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
-const SearchBar = ({setResults}) => {
+const SearchBar = ({setRecipies}) => {
 
     const [userInput, setUserInput] = useState("");
-    const [searchResults, setSearchResults] = useState({});
 
     const fetchData  = async (value) => {
         const response = await fetch(`${BASEE_URL}${value}`);
         const data = await response.json();
         const results = data.meals;
-        console.log(results);
+        setRecipies(results);
     };
 
     const handleSearch = (value) => {
