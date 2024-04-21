@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+"use client";
+
+import { useState } from "react";
 import AppHeader from "@/components/header";
 import RecipeCard from "@/components/recipieCard";
 import RecipeModal from "@/components/recipieModal";

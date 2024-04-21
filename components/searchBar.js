@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const BASEE_URL = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
