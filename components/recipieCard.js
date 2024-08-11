@@ -12,8 +12,8 @@ const RecipeCard = ({ name, category, image, instructions, isBookmarked, onBookm
             <button
                 className={`p-2 rounded-full ${isBookmarked ? "bg-red-500" : "bg-gray-300"} hover:bg-red-700 text-white`}
                 onClick={(e) => {
-                    e.stopPropagation(); // Prevent modal from opening
-                    onBookmark(); // Call the bookmark function passed as a prop
+                    e.stopPropagation(); 
+                    onBookmark(); 
                 }}
             >
                 {isBookmarked ? "Unbookmark" : "Bookmark"}
